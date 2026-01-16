@@ -3,47 +3,126 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tiny Detailz – Auto Detailing in the Inland Empire</title>
+  <title>Tiny Detailz – Mobile Auto Detailing</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Top navigation + hero -->
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <span>Mobile Auto Detailing • Inland Empire & Surrounding Areas</span>
+    <span class="top-bar-contact">
+      <a href="tel:+19515257666">(951) 525-7666</a>
+      <!-- If you have Instagram / FB, add links here -->
+    </span>
+  </div>
+
+  <!-- HERO + NAV -->
   <header class="hero" id="top">
     <div class="hero-overlay">
       <nav class="nav">
         <div class="nav-logo">
-          <!-- If you upload a logo image later, replace the text with an <img> -->
           <span class="logo-main">Tiny Detailz</span>
         </div>
         <div class="nav-links">
+          <a href="#why">Why Us</a>
+          <a href="#steps">How It Works</a>
           <a href="#packages">Packages</a>
-          <a href="#ceramic">Ceramic Coating</a>
-          <a href="#addons">Add-Ons</a>
+          <a href="#ceramic">Ceramic</a>
+          <a href="#gallery">Gallery</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
 
-      <div class="hero-content">
-        <p class="hero-kicker">Mobile Auto Detailing • Inland Empire</p>
-        <h1>Premium shine, <span>tiny detailz</span> big difference.</h1>
-        <p class="hero-subtitle">
-          High-end detailing, paint enhancement, and ceramic coating brought
-          directly to you in the Inland Empire.
-        </p>
-        <div class="hero-actions">
-          <a class="btn primary" href="#contact">Book Now</a>
-          <a class="btn ghost" href="tel:+19515257666">Call / Text (951) 525-7666</a>
+      <div class="hero-inner">
+        <div class="hero-content">
+          <p class="hero-kicker">Mobile Auto Detailing • We Come To You</p>
+          <h1>
+            Premium shine, <span>tiny detailz</span><br />
+            big difference.
+          </h1>
+          <p class="hero-subtitle">
+            High-end interior & exterior detailing, paint enhancement and ceramic coatings
+            brought directly to your driveway in the Inland Empire.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#contact">Book Now</a>
+            <a class="btn ghost" href="#packages">View Packages</a>
+          </div>
+          <p class="hero-note">Call / Text: <a href="tel:+19515257666">(951) 525-7666</a></p>
+        </div>
+
+        <!-- HERO IMAGE PLACEHOLDER -->
+        <div class="hero-media">
+          <!--
+            Replace hero-car.jpg with your own image file (e.g. /assets/hero-car.jpg)
+            after you upload it to the repo.
+          -->
+          <div class="hero-image" style="background-image: url('assets/hero-car.jpg');">
+            <div class="hero-image-label">Your best 50/50 or after-detail photo here</div>
+          </div>
         </div>
       </div>
     </div>
   </header>
 
   <main>
+    <!-- WHY CHOOSE US -->
+    <section id="why" class="section">
+      <h2 class="section-title">Why Choose Tiny Detailz?</h2>
+      <p class="section-subtitle">
+        We focus on the details that most people miss. Professional equipment, premium products,
+        and a true passion for leaving every car looking its absolute best.
+      </p>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <h3>Mobile & Convenient</h3>
+          <p>We bring the detail shop to your home or workplace so you don’t lose time waiting in a lobby.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Professional Results</h3>
+          <p>From basic washes to multi-step paint corrections, every service is performed with care and precision.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Honest Pricing</h3>
+          <p>Clear package pricing &amp; expectations up front so you always know exactly what you’re getting.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 3 STEP PROCESS -->
+    <section id="steps" class="section section-alt">
+      <h2 class="section-title">Simple 3-Step Mobile Detailing</h2>
+      <p class="section-subtitle">
+        Booking with Tiny Detailz is easy. We handle the hard work – you enjoy the fresh, clean ride.
+      </p>
+
+      <div class="steps-grid">
+        <article class="step-card">
+          <div class="step-media image-placeholder" style="background-image: url('assets/step-1.jpg');"></div>
+          <h3>1. Book Your Detail</h3>
+          <p>Call, text, or message us with your vehicle info and location. We confirm the best package and time.</p>
+        </article>
+
+        <article class="step-card">
+          <div class="step-media image-placeholder" style="background-image: url('assets/step-2.jpg');"></div>
+          <h3>2. We Come To You</h3>
+          <p>We arrive on time with professional tools, products, and everything needed to detail your vehicle.</p>
+        </article>
+
+        <article class="step-card">
+          <div class="step-media image-placeholder" style="background-image: url('assets/step-3.jpg');"></div>
+          <h3>3. Enjoy The Results</h3>
+          <p>Walk around the vehicle with us, approve the work, and enjoy that fresh, like-new feeling again.</p>
+        </article>
+      </div>
+    </section>
+
     <!-- PACKAGES -->
     <section id="packages" class="section">
       <h2 class="section-title">Detailing Packages</h2>
       <p class="section-subtitle">
-        Choose the level of clean that fits your vehicle. All services are performed with professional-grade products and techniques.
+        Choose the level of clean that fits your vehicle. All services are performed with professional-grade products.
       </p>
 
       <div class="card-grid">
@@ -60,15 +139,12 @@
             <li>Bug &amp; residue removal</li>
             <li>Gas cap area thoroughly cleaned</li>
             <li>3-month ceramic sealant for enhanced shine &amp; protection</li>
-            <li>Deep wheel cleaning</li>
-            <li>Tire shine for a clean, glossy finish</li>
+            <li>Deep wheel cleaning &amp; tire shine</li>
             <li>Hand-dried for a spotless result</li>
-            <li>Full vacuum of all areas (trunk included if empty)</li>
-            <li>Door jambs cleaned</li>
-            <li>Complete interior wipe-down</li>
-            <li>Vents and gauges brushed for precision cleaning</li>
-            <li>Cup holders cleaned</li>
-            <li>Interior windows left crystal-clear</li>
+            <li>Full interior vacuum (trunk if empty)</li>
+            <li>Door jambs cleaned &amp; full interior wipe-down</li>
+            <li>Vents, gauges &amp; cup holders cleaned</li>
+            <li>Interior glass left crystal-clear</li>
           </ul>
           <a href="#contact" class="btn card-btn">Book Basic Wash</a>
         </article>
@@ -85,20 +161,16 @@
           <ul class="card-list">
             <li>Foam wash / hand wash (pre-treat if needed)</li>
             <li>2 bucket wash method</li>
-            <li>Deep wheel &amp; tire cleaning</li>
-            <li>Tire gloss (non-sling)</li>
+            <li>Deep wheel &amp; tire cleaning + non-sling tire gloss</li>
             <li>Ceramic detail spray</li>
-            <li>Deep vacuum</li>
-            <li>Full interior blow out of all cracks &amp; crevices</li>
-            <li>Full interior scrub down of all plastics, rubber &amp; leather</li>
-            <li>Full interior steam cleaning of plastics, vinyls, air vents &amp; cup holders (sanitizes &amp; kills bacteria)</li>
-            <li>Full seat &amp; carpet shampoo (removes stains &amp; odors)</li>
-            <li>Seat &amp; carpet extraction</li>
+            <li>Deep vacuum &amp; full interior blow out</li>
+            <li>Interior scrub of plastics, rubber &amp; leather</li>
+            <li>Interior steam cleaning (plastics, vinyls, vents, cup holders)</li>
+            <li>Seat &amp; carpet shampoo + extraction</li>
             <li>Interior UV protectant (prevents cracking &amp; fading)</li>
             <li>Leather conditioner (if applicable)</li>
             <li>Air freshener &amp; odor removal</li>
-            <li>Streak-free glass</li>
-            <li>Door / trunk jams cleaned</li>
+            <li>Streak-free glass &amp; door / trunk jams cleaned</li>
           </ul>
           <a href="#contact" class="btn card-btn">Book Full Detail</a>
         </article>
@@ -116,15 +188,11 @@
             <li>2 bucket wash method</li>
             <li>Iron removal treatment</li>
             <li>Clay bar treatment</li>
-            <li>Ceramic sealant (6 months protection)</li>
-            <li>Deep wheel &amp; tire cleaning</li>
-            <li>Wheel wells cleaned &amp; conditioned</li>
-            <li>Tire gloss (non-sling)</li>
-            <li>Deep vacuum</li>
-            <li>Full interior blow out</li>
-            <li>Interior wipe down</li>
-            <li>Air freshener</li>
-            <li>Streak-free glass</li>
+            <li>6 month ceramic sealant</li>
+            <li>Deep wheel &amp; tire cleaning + wheel wells cleaned</li>
+            <li>Non-sling tire gloss</li>
+            <li>Deep vacuum &amp; interior blow out</li>
+            <li>Interior wipe down &amp; streak-free glass</li>
             <li>Door / trunk jams cleaned</li>
           </ul>
           <a href="#contact" class="btn card-btn">Book Clay &amp; Seal</a>
@@ -138,11 +206,10 @@
           </p>
           <ul class="card-list">
             <li>Paint decontamination wash + clay bar</li>
-            <li>Wheels deep cleaned</li>
-            <li>All wheel wells cleaned</li>
+            <li>Wheels deep cleaned &amp; wheel wells cleaned</li>
             <li>Tires cleaned &amp; conditioned</li>
             <li>Trim conditioned &amp; sealed</li>
-            <li>Paint enhancement process which removes light swirls &amp; creates a high gloss</li>
+            <li>Paint enhancement removes light swirls &amp; boosts gloss</li>
             <li>6 month ceramic sealant</li>
           </ul>
           <a href="#contact" class="btn card-btn">Book Paint Enhancement</a>
@@ -164,11 +231,9 @@
           <p class="card-price">Starting at <strong>$800</strong></p>
           <ul class="card-list">
             <li>Paint decontamination prep</li>
-            <li>Clay bar treatment</li>
-            <li>Iron removal treatment</li>
-            <li>Wheels deep cleaned</li>
-            <li>Trim cleaned &amp; conditioned</li>
-            <li>Paint enhancement polish which removes light swirls &amp; creates a high gloss</li>
+            <li>Clay bar treatment &amp; iron removal</li>
+            <li>Wheels deep cleaned &amp; trim cleaned / conditioned</li>
+            <li>Paint enhancement polish removes light swirls</li>
             <li>2-year ceramic coating (with maintenance)</li>
           </ul>
         </article>
@@ -176,95 +241,4 @@
         <!-- Level 2 -->
         <article class="card card-featured">
           <div class="card-pill">Best Value</div>
-          <h3>Level 2 Ceramic Coating</h3>
-          <p class="card-price">Starting at <strong>$1,200</strong></p>
-          <ul class="card-list">
-            <li>Paint decontamination prep</li>
-            <li>Clay bar treatment</li>
-            <li>Iron removal treatment</li>
-            <li>Wheels deep cleaned</li>
-            <li>Trim cleaned &amp; conditioned</li>
-            <li>2-step paint polish which removes up to 80% of scratching</li>
-            <li>3–5 year ceramic coating (with maintenance)</li>
-          </ul>
-        </article>
-
-        <!-- Level 3 -->
-        <article class="card">
-          <h3>Level 3 Ceramic Coating</h3>
-          <p class="card-price">Starting at <strong>$1,500</strong></p>
-          <ul class="card-list">
-            <li>Paint decontamination prep</li>
-            <li>Clay bar treatment</li>
-            <li>Iron removal treatment</li>
-            <li>Wheels deep cleaned</li>
-            <li>Trim cleaned &amp; conditioned</li>
-            <li>Full 3-step paint correction (removes up to 95% of paint defects)</li>
-            <li>5-year ceramic coating (with maintenance)</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <!-- ADD-ONS -->
-    <section id="addons" class="section">
-      <h2 class="section-title">Add-On Services</h2>
-      <p class="section-subtitle">
-        Customize any package with these extra services for even deeper cleaning and protection.
-      </p>
-
-      <div class="addons-grid">
-        <ul class="addons-list">
-          <li><span>Headlight restoration</span><span>$60</span></li>
-          <li><span>Exterior trim restoration</span><span>$25</span></li>
-          <li><span>Engine bay detail</span><span>$60</span></li>
-          <li><span>Pet hair removal</span><span>$30+</span></li>
-          <li><span>Full interior steam clean</span><span>$50</span></li>
-          <li><span>Seat / carpet shampoo</span><span>$60+</span></li>
-          <li><span>Leather seats clean &amp; conditioned</span><span>$40</span></li>
-          <li><span>Interior UV protectant</span><span>$30</span></li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section section-alt">
-      <h2 class="section-title">Book Your Detail</h2>
-      <p class="section-subtitle">
-        Serving the <strong>Inland Empire</strong> and surrounding areas. Call or text to schedule your appointment or ask about which package is best for your vehicle.
-      </p>
-
-      <div class="contact-grid">
-        <div class="contact-card">
-          <h3>Call / Text</h3>
-          <p class="contact-phone">
-            <a href="tel:+19515257666">(951) 525-7666</a>
-          </p>
-          <p>Available by appointment only.</p>
-        </div>
-
-        <div class="contact-card">
-          <h3>Fast Booking</h3>
-          <p>
-            When you reach out, include your vehicle (year, make, model), location in the Inland Empire, and a few photos if possible. We’ll recommend the right package and confirm your price before we arrive.
-          </p>
-        </div>
-      </div>
-
-      <div class="contact-cta">
-        <a href="tel:+19515257666" class="btn primary large">Call / Text to Book Now</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <p>© <span id="year"></span> Tiny Detailz. All rights reserved.</p>
-    <a href="#top" class="back-to-top">Back to top ↑</a>
-  </footer>
-
-  <script>
-    // update year automatically
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-</body>
-</html>
+          <h
