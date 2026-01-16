@@ -1,414 +1,750 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tiny Detailz – Mobile Auto Detailing</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <!-- TOP BAR -->
-  <div class="top-bar">
-    <span>Mobile Auto Detailing • Inland Empire & Surrounding Areas</span>
-    <span class="top-bar-contact">
-      <a href="tel:+19515257666">(951) 525-7666</a>
-      <!-- If you have Instagram / FB, add links here -->
-    </span>
-  </div>
+/* Tiny Detailz – Main Styles */
 
-  <!-- HERO + NAV -->
-  <header class="hero" id="top">
-    <div class="hero-overlay">
-      <nav class="nav">
-        <div class="nav-logo">
-          <span class="logo-main">Tiny Detailz</span>
-        </div>
-        <div class="nav-links">
-          <a href="#why">Why Us</a>
-          <a href="#steps">How It Works</a>
-          <a href="#packages">Packages</a>
-          <a href="#ceramic">Ceramic</a>
-          <a href="#gallery">Gallery</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </nav>
+/* ---------- Theme Variables ---------- */
 
-      <div class="hero-inner">
-        <div class="hero-content">
-          <p class="hero-kicker">Mobile Auto Detailing • We Come To You</p>
-          <h1>
-            Premium shine, <span>tiny detailz</span><br />
-            big difference.
-          </h1>
-          <p class="hero-subtitle">
-            High-end interior & exterior detailing, paint enhancement and ceramic coatings
-            brought directly to your driveway in the Inland Empire.
-          </p>
-          <div class="hero-actions">
-            <a class="btn primary" href="#contact">Book Now</a>
-            <a class="btn ghost" href="#packages">View Packages</a>
-          </div>
-          <p class="hero-note">Call / Text: <a href="tel:+19515257666">(951) 525-7666</a></p>
-        </div>
+:root {
+  --bg: #050609;
+  --bg-alt: #080b12;
+  --card-bg: #131824;
+  --card-bg-soft: #181d2a;
+  --accent: #d72530;
+  --accent-soft: #a41923;
+  --accent-glow: rgba(215, 37, 48, 0.5);
+  --text: #f5f5f7;
+  --muted: #a0a3b1;
+  --border-subtle: #262b38;
+  --highlight: #0fb4ff;
+  --shadow-soft: 0 18px 40px rgba(0, 0, 0, 0.6);
+  --radius-lg: 18px;
+  --radius-pill: 999px;
+  --max-width: 1120px;
+  --transition-fast: 0.18s ease-out;
+  --transition-med: 0.26s ease-out;
+}
 
-        <!-- HERO IMAGE PLACEHOLDER -->
-        <div class="hero-media">
-          <!--
-            Replace hero-car.jpg with your own image file (e.g. /assets/hero-car.jpg)
-            after you upload it to the repo.
-          -->
-          <div class="hero-image" style="background-image: url('assets/hero-car.jpg');">
-            <div class="hero-image-label">Your best 50/50 or after-detail photo here</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
-  <main>
-    <!-- WHY CHOOSE US -->
-    <section id="why" class="section">
-      <h2 class="section-title">Why Choose Tiny Detailz?</h2>
-      <p class="section-subtitle">
-        We focus on the details that most people miss. Professional equipment, premium products,
-        and a true passion for leaving every car looking its absolute best.
-      </p>
+html {
+  scroll-behavior: smooth;
+}
 
-      <div class="feature-grid">
-        <article class="feature-card">
-          <h3>Mobile & Convenient</h3>
-          <p>We bring the detail shop to your home or workplace so you don’t lose time waiting in a lobby.</p>
-        </article>
-        <article class="feature-card">
-          <h3>Professional Results</h3>
-          <p>From basic washes to multi-step paint corrections, every service is performed with care and precision.</p>
-        </article>
-        <article class="feature-card">
-          <h3>Honest Pricing</h3>
-          <p>Clear package pricing &amp; expectations up front so you always know exactly what you’re getting.</p>
-        </article>
-      </div>
-    </section>
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    "Segoe UI", sans-serif;
+  color: var(--text);
+  background: radial-gradient(circle at top, #181b27 0, #050609 55%, #020307 100%);
+}
 
-    <!-- 3 STEP PROCESS -->
-    <section id="steps" class="section section-alt">
-      <h2 class="section-title">Simple 3-Step Mobile Detailing</h2>
-      <p class="section-subtitle">
-        Booking with Tiny Detailz is easy. We handle the hard work – you enjoy the fresh, clean ride.
-      </p>
+/* ---------- Top Bar ---------- */
 
-      <div class="steps-grid">
-        <article class="step-card">
-          <div class="step-media image-placeholder" style="background-image: url('assets/step-1.jpg');"></div>
-          <h3>1. Book Your Detail</h3>
-          <p>Call, text, or message us with your vehicle info and location. We confirm the best package and time.</p>
-        </article>
+.top-bar {
+  background: #000;
+  color: var(--muted);
+  font-size: 0.78rem;
+  padding: 0.45rem 1.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-        <article class="step-card">
-          <div class="step-media image-placeholder" style="background-image: url('assets/step-2.jpg');"></div>
-          <h3>2. We Come To You</h3>
-          <p>We arrive on time with professional tools, products, and everything needed to detail your vehicle.</p>
-        </article>
+.top-bar a {
+  color: var(--highlight);
+  text-decoration: none;
+}
 
-        <article class="step-card">
-          <div class="step-media image-placeholder" style="background-image: url('assets/step-3.jpg');"></div>
-          <h3>3. Enjoy The Results</h3>
-          <p>Walk around the vehicle with us, approve the work, and enjoy that fresh, like-new feeling again.</p>
-        </article>
-      </div>
-    </section>
+.top-bar-contact {
+  display: flex;
+  gap: 0.75rem;
+}
 
-    <!-- PACKAGES -->
-    <section id="packages" class="section">
-      <h2 class="section-title">Detailing Packages</h2>
-      <p class="section-subtitle">
-        Choose the level of clean that fits your vehicle. All services are performed with professional-grade products.
-      </p>
+/* ---------- Sections ---------- */
 
-      <div class="card-grid">
-        <!-- Basic Wash -->
-        <article class="card">
-          <h3>Basic Wash</h3>
-          <p class="card-price">
-            Cars: <strong>$80</strong><br />
-            Midsize / Small SUV: <strong>$95</strong><br />
-            Large SUV / Trucks: <strong>$150</strong>
-          </p>
-          <ul class="card-list">
-            <li>Full hand wash</li>
-            <li>Bug &amp; residue removal</li>
-            <li>Gas cap area thoroughly cleaned</li>
-            <li>3-month ceramic sealant for enhanced shine &amp; protection</li>
-            <li>Deep wheel cleaning &amp; tire shine</li>
-            <li>Hand-dried for a spotless result</li>
-            <li>Full interior vacuum (trunk if empty)</li>
-            <li>Door jambs cleaned &amp; full interior wipe-down</li>
-            <li>Vents, gauges &amp; cup holders cleaned</li>
-            <li>Interior glass left crystal-clear</li>
-          </ul>
-          <a href="#contact" class="btn card-btn">Book Basic Wash</a>
-        </article>
+.section {
+  padding: 4rem 1.25rem;
+}
 
-        <!-- Full Detail -->
-        <article class="card card-featured">
-          <div class="card-pill">Most Popular</div>
-          <h3>Full Detail</h3>
-          <p class="card-price">
-            Cars: <strong>$200</strong><br />
-            Small SUVs / Small Trucks: <strong>$240</strong><br />
-            Large SUVs / Large Trucks / 3rd Row: <strong>$280</strong>
-          </p>
-          <ul class="card-list">
-            <li>Foam wash / hand wash (pre-treat if needed)</li>
-            <li>2 bucket wash method</li>
-            <li>Deep wheel &amp; tire cleaning + non-sling tire gloss</li>
-            <li>Ceramic detail spray</li>
-            <li>Deep vacuum &amp; full interior blow out</li>
-            <li>Interior scrub of plastics, rubber &amp; leather</li>
-            <li>Interior steam cleaning (plastics, vinyls, vents, cup holders)</li>
-            <li>Seat &amp; carpet shampoo + extraction</li>
-            <li>Interior UV protectant (prevents cracking &amp; fading)</li>
-            <li>Leather conditioner (if applicable)</li>
-            <li>Air freshener &amp; odor removal</li>
-            <li>Streak-free glass &amp; door / trunk jams cleaned</li>
-          </ul>
-          <a href="#contact" class="btn card-btn">Book Full Detail</a>
-        </article>
+.section-alt {
+  background: radial-gradient(circle at top, #181c2a 0, #05060e 70%);
+}
 
-        <!-- Clay & Seal -->
-        <article class="card">
-          <h3>Clay &amp; Seal</h3>
-          <p class="card-price">
-            Cars: <strong>$150</strong><br />
-            Small SUVs / Small Trucks: <strong>$200</strong><br />
-            Large SUVs / Large Trucks: <strong>$240</strong>
-          </p>
-          <ul class="card-list">
-            <li>Foam wash / hand wash (pre-treat if needed)</li>
-            <li>2 bucket wash method</li>
-            <li>Iron removal treatment</li>
-            <li>Clay bar treatment</li>
-            <li>6 month ceramic sealant</li>
-            <li>Deep wheel &amp; tire cleaning + wheel wells cleaned</li>
-            <li>Non-sling tire gloss</li>
-            <li>Deep vacuum &amp; interior blow out</li>
-            <li>Interior wipe down &amp; streak-free glass</li>
-            <li>Door / trunk jams cleaned</li>
-          </ul>
-          <a href="#contact" class="btn card-btn">Book Clay &amp; Seal</a>
-        </article>
+.section-title {
+  text-align: center;
+  font-size: 1.9rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  margin: 0 0 0.75rem;
+}
 
-        <!-- Paint Enhancement -->
-        <article class="card">
-          <h3>Paint Enhancement &amp; Protection</h3>
-          <p class="card-price">
-            Starting at <strong>$350</strong>
-          </p>
-          <ul class="card-list">
-            <li>Paint decontamination wash + clay bar</li>
-            <li>Wheels deep cleaned &amp; wheel wells cleaned</li>
-            <li>Tires cleaned &amp; conditioned</li>
-            <li>Trim conditioned &amp; sealed</li>
-            <li>Paint enhancement removes light swirls &amp; boosts gloss</li>
-            <li>6 month ceramic sealant</li>
-          </ul>
-          <a href="#contact" class="btn card-btn">Book Paint Enhancement</a>
-        </article>
-      </div>
-    </section>
+.section-subtitle {
+  max-width: 640px;
+  margin: 0 auto 2.5rem;
+  text-align: center;
+  color: var(--muted);
+  line-height: 1.6;
+  font-size: 0.98rem;
+}
 
-    <!-- CERAMIC COATING -->
-    <section id="ceramic" class="section section-alt">
-      <h2 class="section-title">Ceramic Coating Packages</h2>
-      <p class="section-subtitle">
-        Long-term protection and insane gloss. Perfect for enthusiasts who want their vehicle to stay looking freshly detailed.
-      </p>
+.card-grid {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.75rem;
+}
 
-      <div class="card-grid card-grid-3">
-        <!-- Level 1 -->
-        <article class="card">
-          <h3>Level 1 Ceramic Coating</h3>
-          <p class="card-price">Starting at <strong>$800</strong></p>
-          <ul class="card-list">
-            <li>Paint decontamination prep</li>
-            <li>Clay bar treatment &amp; iron removal</li>
-            <li>Wheels deep cleaned &amp; trim cleaned / conditioned</li>
-            <li>Paint enhancement polish removes light swirls</li>
-            <li>2-year ceramic coating (with maintenance)</li>
-          </ul>
-        </article>
+.card-grid-3 {
+  grid-template-columns: 1fr;
+}
 
-        <!-- Level 2 -->
-        <article class="card card-featured">
-          <div class="card-pill">Best Value</div>
-          <h3>Level 2 Ceramic Coating</h3>
-          <p class="card-price">Starting at <strong>$1,200</strong></p>
-          <ul class="card-list">
-            <li>Paint decontamination prep</li>
-            <li>Clay bar treatment &amp; iron removal</li>
-            <li>Wheels deep cleaned &amp; trim conditioned</li>
-            <li>2-step paint polish removes up to ~80% of scratching</li>
-            <li>3–5 year ceramic coating (with maintenance)</li>
-          </ul>
-        </article>
+@media (min-width: 768px) {
+  .section {
+    padding: 5rem 1.75rem;
+  }
 
-        <!-- Level 3 -->
-        <article class="card">
-          <h3>Level 3 Ceramic Coating</h3>
-          <p class="card-price">Starting at <strong>$1,500</strong></p>
-          <ul class="card-list">
-            <li>Paint decontamination prep</li>
-            <li>Clay bar treatment &amp; iron removal</li>
-            <li>Wheels deep cleaned &amp; trim conditioned</li>
-            <li>Full 3-step paint correction (up to ~95% defect removal)</li>
-            <li>5-year ceramic coating (with maintenance)</li>
-          </ul>
-        </article>
-      </div>
-    </section>
+  .card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 
-    <!-- ADD-ONS -->
-    <section id="addons" class="section">
-      <h2 class="section-title">Add-On Services</h2>
-      <p class="section-subtitle">
-        Customize any package with these extra services for deeper cleaning and added protection.
-      </p>
+  .card-grid-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
 
-      <div class="addons-grid">
-        <ul class="addons-list">
-          <li><span>Headlight restoration</span><span>$60</span></li>
-          <li><span>Exterior trim restoration</span><span>$25</span></li>
-          <li><span>Engine bay detail</span><span>$60</span></li>
-          <li><span>Pet hair removal</span><span>$30+</span></li>
-          <li><span>Full interior steam clean</span><span>$50</span></li>
-          <li><span>Seat / carpet shampoo</span><span>$60+</span></li>
-          <li><span>Leather seats clean &amp; conditioned</span><span>$40</span></li>
-          <li><span>Interior UV protectant</span><span>$30</span></li>
-        </ul>
-      </div>
-    </section>
+/* ---------- Hero & Nav ---------- */
 
-    <!-- GALLERY PLACEHOLDER -->
-    <section id="gallery" class="section section-alt">
-      <h2 class="section-title">Detail Gallery</h2>
-      <p class="section-subtitle">
-        Before &amp; afters, interior rescues, and glossy paint finishes.
-        Replace these placeholders with your own work to show off your results.
-      </p>
+.hero {
+  position: relative;
+  min-height: 80vh;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 20% 0%, rgba(15, 180, 255, 0.35), transparent 60%),
+    radial-gradient(circle at 80% 10%, rgba(215, 37, 48, 0.55), transparent 60%),
+    linear-gradient(135deg, #050609 0%, #05060b 40%, #020308 100%);
+}
 
-      <div class="gallery-grid">
-        <!--
-          Replace each src="assets/gallery-x.jpg" with real image files you upload
-          (for example /assets/tesla-interior-before-after.jpg etc)
-        -->
-        <figure class="gallery-item">
-          <img src="assets/gallery-1.jpg" alt="Detail example 1" />
-        </figure>
-        <figure class="gallery-item">
-          <img src="assets/gallery-2.jpg" alt="Detail example 2" />
-        </figure>
-        <figure class="gallery-item">
-          <img src="assets/gallery-3.jpg" alt="Detail example 3" />
-        </figure>
-        <figure class="gallery-item">
-          <img src="assets/gallery-4.jpg" alt="Detail example 4" />
-        </figure>
-        <figure class="gallery-item">
-          <img src="assets/gallery-5.jpg" alt="Detail example 5" />
-        </figure>
-        <figure class="gallery-item">
-          <img src="assets/gallery-6.jpg" alt="Detail example 6" />
-        </figure>
-      </div>
-    </section>
+.hero-overlay {
+  min-height: 80vh;
+  backdrop-filter: blur(14px);
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),
+    rgba(5, 6, 12, 0.95)
+  );
+}
 
-    <!-- VIDEO SECTION -->
-    <section class="section video-section">
-      <h2 class="section-title">Video Showcase</h2>
-      <p class="section-subtitle">
-        Add a short video of you detailing, a 50/50 transformation, or a full walkaround.
-      </p>
+.nav {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1.1rem 1.25rem 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-      <div class="video-wrapper">
-        <!--
-          OPTION 1 – YouTube embed:
-          Replace VIDEO_ID_HERE with your YouTube video id:
-          https://www.youtube.com/watch?v=VIDEO_ID_HERE
-        -->
-        <!--
-        <iframe
-          src="https://www.youtube.com/embed/VIDEO_ID_HERE"
-          title="Tiny Detailz Detailing Video"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-        -->
+.nav-logo {
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
 
-        <!-- OPTION 2 – Self-hosted video file (e.g. assets/detail-demo.mp4) -->
-        <video controls poster="assets/video-poster.jpg">
-          <!-- Replace with your own video file path -->
-          <source src="assets/detail-demo.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-    </section>
+.logo-main {
+  padding: 0.3rem 0.8rem;
+  border-radius: var(--radius-pill);
+  background: linear-gradient(135deg, #0f9bff, #63d3ff);
+  color: #050609;
+  box-shadow: 0 10px 28px rgba(15, 155, 255, 0.45);
+}
 
-    <!-- CONTACT -->
-    <section id="contact" class="section section-alt">
-      <h2 class="section-title">Book Your Detail</h2>
-      <p class="section-subtitle">
-        Serving the Inland Empire and surrounding areas. Call or text to schedule
-        your appointment, ask questions, or get a quote.
-      </p>
+.nav-links {
+  display: none;
+  gap: 1.4rem;
+  font-size: 0.9rem;
+}
 
-      <div class="contact-grid">
-        <div class="contact-card">
-          <h3>Call / Text</h3>
-          <p class="contact-phone">
-            <a href="tel:+19515257666">(951) 525-7666</a>
-          </p>
-          <p>Available by appointment only.</p>
-        </div>
+.nav-links a {
+  text-decoration: none;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+  position: relative;
+}
 
-        <div class="contact-card">
-          <h3>Fast Quote Form</h3>
-          <!-- This is a simple static form; if you later connect it to a service (Formspree, etc.), it can send email -->
-          <form class="contact-form">
-            <label>
-              Name
-              <input type="text" name="name" placeholder="Your name" />
-            </label>
-            <label>
-              Phone
-              <input type="tel" name="phone" placeholder="Best number to reach you" />
-            </label>
-            <label>
-              Vehicle (Year / Make / Model)
-              <input type="text" name="vehicle" placeholder="e.g. 2022 BMW 3 Series" />
-            </label>
-            <label>
-              Package / Services Interested In
-              <textarea name="message" rows="3" placeholder="Basic Wash, Full Detail, Ceramic, etc."></textarea>
-            </label>
-            <p class="form-note">
-              This form is just a placeholder. For now, tap the button below to call or text –
-              or connect this form to an email service later.
-            </p>
-            <a href="tel:+19515257666" class="btn primary">Call / Text To Submit</a>
-          </form>
-        </div>
-      </div>
-    </section>
-  </main>
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.35rem;
+  width: 0;
+  height: 2px;
+  background: var(--accent);
+  transition: width var(--transition-fast);
+}
 
-  <footer class="footer">
-    <p>© <span id="year"></span> Tiny Detailz. All rights reserved.</p>
-    <a href="#top" class="back-to-top">Back to top ↑</a>
-  </footer>
+.nav-links a:hover {
+  color: var(--text);
+}
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-</body>
-</html>
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .nav-links {
+    display: flex;
+  }
+}
+
+/* Hero layout */
+
+.hero-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 3.2rem 1.25rem 4.5rem;
+  display: grid;
+  grid-template-columns: 1.3fr;
+  gap: 2.5rem;
+}
+
+.hero-content {
+  max-width: 520px;
+}
+
+.hero-kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.24em;
+  color: var(--muted);
+  font-size: 0.7rem;
+  margin-bottom: 0.8rem;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  line-height: 1.1;
+  margin: 0 0 1rem;
+}
+
+.hero h1 span {
+  color: var(--accent);
+}
+
+.hero-subtitle {
+  color: var(--muted);
+  margin: 0 0 1.8rem;
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.hero-note {
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.hero-note a {
+  color: var(--highlight);
+  text-decoration: none;
+}
+
+.hero-media {
+  display: none;
+}
+
+.hero-image {
+  position: relative;
+  border-radius: 26px;
+  background-size: cover;
+  background-position: center;
+  height: 260px;
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+}
+
+.hero-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.65),
+    rgba(0, 0, 0, 0.1)
+  );
+}
+
+.hero-image-label {
+  position: absolute;
+  bottom: 0.9rem;
+  left: 1rem;
+  right: 1rem;
+  z-index: 2;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #fff;
+}
+
+@media (min-width: 900px) {
+  .hero-inner {
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+    align-items: center;
+    padding-top: 4.2rem;
+    padding-bottom: 5.2rem;
+  }
+
+  .hero h1 {
+    font-size: 2.8rem;
+  }
+
+  .hero-media {
+    display: block;
+  }
+}
+
+/* ---------- Buttons ---------- */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 1.4rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid transparent;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background var(--transition-med), color var(--transition-med),
+    box-shadow var(--transition-med), transform var(--transition-fast),
+    border-color var(--transition-fast);
+}
+
+.btn.primary {
+  background: linear-gradient(135deg, var(--accent), #ff4d4d);
+  color: #fff;
+  box-shadow: 0 14px 30px var(--accent-glow);
+}
+
+.btn.primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 18px 40px var(--accent-glow);
+}
+
+.btn.ghost {
+  border-color: var(--border-subtle);
+  color: var(--muted);
+  background: rgba(10, 12, 18, 0.6);
+}
+
+.btn.ghost:hover {
+  border-color: var(--accent);
+  color: var(--text);
+}
+
+.btn.large {
+  padding: 0.9rem 2rem;
+}
+
+/* ---------- Feature / Steps ---------- */
+
+.feature-grid {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.4rem;
+}
+
+.feature-card {
+  background: var(--card-bg);
+  border-radius: var(--radius-lg);
+  padding: 1.4rem 1.5rem;
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-soft);
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.feature-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+@media (min-width: 768px) {
+  .feature-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* Steps */
+
+.steps-grid {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.7rem;
+}
+
+.step-card {
+  background: var(--card-bg-soft);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-subtle);
+  padding: 1.4rem 1.4rem 1.5rem;
+  box-shadow: var(--shadow-soft);
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.step-card h3 {
+  margin: 0.8rem 0 0.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.step-media {
+  height: 150px;
+  border-radius: 14px;
+  background-position: center;
+  background-size: cover;
+  background-color: #262b38;
+  position: relative;
+  overflow: hidden;
+}
+
+.image-placeholder::after {
+  content: "Photo placeholder – upload your image & update URL in HTML";
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.72rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.75);
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0.7)
+  );
+}
+
+@media (min-width: 768px) {
+  .steps-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* ---------- Cards / Packages ---------- */
+
+.card {
+  background: radial-gradient(circle at top left, #1f2431 0, var(--card-bg) 42%);
+  border-radius: var(--radius-lg);
+  padding: 1.6rem 1.5rem 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  box-shadow: var(--shadow-soft);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top right, rgba(15, 180, 255, 0.13), transparent 60%);
+  opacity: 0;
+  transition: opacity var(--transition-med);
+  pointer-events: none;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.card-price {
+  margin: 0.3rem 0 0.6rem;
+  color: var(--highlight);
+  font-size: 0.95rem;
+}
+
+.card-price strong {
+  font-size: 1.02rem;
+}
+
+.card-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 1rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.card-list li {
+  position: relative;
+  padding-left: 1.1rem;
+}
+
+.card-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--accent);
+}
+
+.card-btn {
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+.card-featured {
+  border-color: rgba(255, 255, 255, 0.16);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.8);
+}
+
+.card-pill {
+  position: absolute;
+  top: 1.1rem;
+  right: 1.1rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-pill);
+  background: rgba(215, 37, 48, 0.95);
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+}
+
+/* ---------- Add-ons ---------- */
+
+.addons-grid {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.addons-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  border-radius: var(--radius-lg);
+  background: var(--card-bg-soft);
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-soft);
+}
+
+.addons-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.85rem 1.3rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.addons-list li:nth-child(odd) {
+  background: rgba(255, 255, 255, 0.01);
+}
+
+.addons-list span:last-child {
+  color: var(--highlight);
+  font-weight: 600;
+}
+
+/* ---------- Gallery ---------- */
+
+.gallery-grid {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem;
+}
+
+.gallery-item {
+  margin: 0;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--border-subtle);
+  background: #151724;
+  position: relative;
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(1.1) contrast(1.05);
+  transition: transform var(--transition-med), filter var(--transition-med);
+}
+
+.gallery-item:hover img {
+  transform: scale(1.04);
+  filter: saturate(1.25) contrast(1.1);
+}
+
+@media (min-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* ---------- Video Section ---------- */
+
+.video-section {
+  text-align: center;
+}
+
+.video-wrapper {
+  max-width: 880px;
+  margin: 0 auto;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-soft);
+  background: #101319;
+}
+
+.video-wrapper iframe,
+.video-wrapper video {
+  width: 100%;
+  height: clamp(220px, 50vw, 460px);
+  display: block;
+}
+
+/* ---------- Contact ---------- */
+
+.contact-grid {
+  max-width: var(--max-width);
+  margin: 0 auto 2.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.contact-card {
+  background: var(--card-bg);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-subtle);
+  padding: 1.5rem 1.4rem;
+  box-shadow: var(--shadow-soft);
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.contact-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.contact-phone a {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact-phone a:hover {
+  color: var(--highlight);
+}
+
+/* Form styles */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.contact-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: #090c14;
+  border-radius: 10px;
+  border: 1px solid var(--border-subtle);
+  padding: 0.6rem 0.7rem;
+  color: var(--text);
+  font-size: 0.9rem;
+  font-family: inherit;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--highlight);
+  box-shadow: 0 0 0 1px rgba(15, 180, 255, 0.3);
+}
+
+.form-note {
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+/* ---------- Footer ---------- */
+
+.footer {
+  border-top: 1px solid #191c26;
+  padding: 1.4rem 1.25rem 1.6rem;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.82rem;
+  background: #05060a;
+}
+
+.back-to-top {
+  display: inline-block;
+  margin-top: 0.4rem;
+  color: var(--highlight);
+  text-decoration: none;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.back-to-top:hover {
+  color: #6ad5ff;
+}
