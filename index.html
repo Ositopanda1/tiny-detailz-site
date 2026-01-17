@@ -2,413 +2,339 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <title>Tiny Detailz | Mobile Auto Detailing</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tiny Detailz – Mobile Auto Detailing</title>
+  <meta name="description" content="Tiny Detailz – premium mobile auto detailing. Basic wash, full detail, clay & seal, paint enhancement, and ceramic coatings." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- TOP BAR -->
-  <div class="top-bar">
-    <span>Mobile Auto Detailing • Inland Empire & Surrounding Areas</span>
-    <span class="top-bar-contact">
-      <a href="tel:+19515257666">(951) 525-7666</a>
-      <!-- If you have Instagram / FB, add links here -->
-    </span>
-  </div>
+  <!-- Top bar / logo -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <!-- If you upload a logo later, replace this text with an <img> tag -->
+        <span class="brand-mark">TD</span>
+        <div class="brand-text">
+          <span class="brand-name">Tiny Detailz</span>
+          <span class="brand-tagline">Mobile Auto Detailing</span>
+        </div>
+      </div>
 
-  <!-- HERO + NAV -->
-  <header class="hero" id="top">
-    <div class="hero-overlay">
       <nav class="nav">
-        <div class="nav-logo">
-          <span class="logo-main">Tiny Detailz</span>
-        </div>
-        <div class="nav-links">
-          <a href="#why">Why Us</a>
-          <a href="#steps">How It Works</a>
-          <a href="#packages">Packages</a>
-          <a href="#ceramic">Ceramic</a>
-          <a href="#gallery">Gallery</a>
-          <a href="#contact">Contact</a>
-        </div>
+        <a href="#services">Services</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
       </nav>
 
-      <div class="hero-inner">
-        <div class="hero-content">
-          <p class="hero-kicker">Mobile Auto Detailing • We Come To You</p>
-          <h1>
-            Premium shine, <span>tiny detailz</span><br />
-            big difference.
-          </h1>
-          <p class="hero-subtitle">
-            High-end interior & exterior detailing, paint enhancement and ceramic coatings
-            brought directly to your driveway in the Inland Empire.
-          </p>
-          <div class="hero-actions">
-            <a class="btn primary" href="#contact">Book Now</a>
-            <a class="btn ghost" href="#packages">View Packages</a>
-          </div>
-          <p class="hero-note">Call / Text: <a href="tel:+19515257666">(951) 525-7666</a></p>
-        </div>
-
-        <!-- HERO IMAGE PLACEHOLDER -->
-        <div class="hero-media">
-          <!--
-            Replace hero-car.jpg with your own image file (e.g. /assets/hero-car.jpg)
-            after you upload it to the repo.
-          -->
-          <div class="hero-image" style="background-image: url('assets/hero-car.jpg');">
-            <div class="hero-image-label">Your best 50/50 or after-detail photo here</div>
-          </div>
-        </div>
+      <div class="nav-cta">
+        <!-- Put your real phone number here -->
+        <a href="tel:5551234567" class="btn btn-outline">Call Now</a>
       </div>
     </div>
   </header>
 
-  <main>
-    <!-- WHY CHOOSE US -->
-    <section id="why" class="section">
-      <h2 class="section-title">Why Choose Tiny Detailz?</h2>
-      <p class="section-subtitle">
-        We focus on the details that most people miss. Professional equipment, premium products,
-        and a true passion for leaving every car looking its absolute best.
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="hero-media" style="background-image: url('assets-hero-car.jpg');"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+      <p class="eyebrow">Serving your area • Mobile service</p>
+      <h1>Premium mobile auto detailing done right.</h1>
+      <p class="hero-subtitle">
+        Tiny Detailz restores your vehicle inside and out with pro-grade products,
+        ceramic protection, and an obsession with the small stuff.
       </p>
 
-      <div class="feature-grid">
-        <article class="feature-card">
-          <h3>Mobile & Convenient</h3>
-          <p>We bring the detail shop to your home or workplace so you don’t lose time waiting in a lobby.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Book a Detail</a>
+        <a href="#services" class="btn btn-ghost">View Packages</a>
+      </div>
+
+      <div class="hero-highlights">
+        <span>✅ Fully mobile</span>
+        <span>✅ Interior & exterior</span>
+        <span>✅ Ceramic options</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section class="section" id="services">
+    <div class="container">
+      <header class="section-header">
+        <h2>Detailing packages</h2>
+        <p>Transparent pricing. Choose the level of clean your vehicle needs.</p>
+      </header>
+
+      <div class="services-grid">
+        <!-- BASIC WASH -->
+        <article class="service-card">
+          <h3>Basic Wash</h3>
+          <p class="service-price">
+            Cars: <strong>$80</strong> • Midsize / small SUV: <strong>$95</strong> • Large SUV / trucks: <strong>$150</strong>
+          </p>
+          <ul>
+            <li>Full hand wash & bug removal</li>
+            <li>Gas cap area thoroughly cleaned</li>
+            <li>3-month ceramic sealant for shine & protection</li>
+            <li>Deep wheel cleaning & tire shine (non sling)</li>
+            <li>Hand dried for a spotless finish</li>
+            <li>Full interior vacuum (trunk if empty)</li>
+            <li>Door jambs cleaned</li>
+            <li>Complete interior wipe-down</li>
+            <li>Vents, gauges & cup holders cleaned</li>
+            <li>Interior glass streak-free</li>
+          </ul>
         </article>
-        <article class="feature-card">
-          <h3>Professional Results</h3>
-          <p>From basic washes to multi-step paint corrections, every service is performed with care and precision.</p>
+
+        <!-- FULL DETAIL -->
+        <article class="service-card">
+          <h3>Full Detail</h3>
+          <p class="service-price">
+            Cars: <strong>$200</strong> • Small SUVs / small trucks: <strong>$240</strong> • Large SUVs / large trucks / 3rd row: <strong>$280</strong>
+          </p>
+          <ul>
+            <li>Foam pre-treatment & 2-bucket hand wash</li>
+            <li>Deep wheel & tire cleaning + non-sling tire gloss</li>
+            <li>Ceramic detail spray for extra shine</li>
+            <li>Deep interior vacuum & blow-out of cracks & crevices</li>
+            <li>Scrub down of plastics, rubber & leather</li>
+            <li>Steam cleaning of plastics, vinyl, vents & cup holders</li>
+            <li>Full seat & carpet shampoo (removes stains & odors)</li>
+            <li>Seat & carpet extraction</li>
+            <li>Interior UV protectant + leather conditioner (if applicable)</li>
+            <li>Odor removal, air freshener & streak-free glass</li>
+            <li>Door & trunk jambs cleaned</li>
+          </ul>
         </article>
-        <article class="feature-card">
-          <h3>Honest Pricing</h3>
-          <p>Clear package pricing &amp; expectations up front so you always know exactly what you’re getting.</p>
+
+        <!-- CLAY & SEAL -->
+        <article class="service-card">
+          <h3>Clay &amp; Seal</h3>
+          <p class="service-price">
+            Cars: <strong>$150</strong> • Small SUVs / small trucks: <strong>$200</strong> • Large SUVs / large trucks: <strong>$240</strong>
+          </p>
+          <ul>
+            <li>Foam wash / hand wash (pre-treat if needed)</li>
+            <li>2-bucket wash method</li>
+            <li>Iron remover & clay bar treatment</li>
+            <li>6-month ceramic sealant</li>
+            <li>Deep wheel & tire cleaning + wheel wells cleaned</li>
+            <li>Non-sling tire gloss</li>
+            <li>Deep vacuum & full interior blow-out</li>
+            <li>Interior wipe-down & air freshener</li>
+            <li>Streak-free glass</li>
+            <li>Door & trunk jambs cleaned</li>
+          </ul>
+        </article>
+
+        <!-- PAINT ENHANCEMENT -->
+        <article class="service-card">
+          <h3>Paint Enhancement &amp; Protection</h3>
+          <p class="service-price">
+            Starting at <strong>$350</strong>
+          </p>
+          <ul>
+            <li>Paint decontamination wash + clay bar</li>
+            <li>Wheels deep cleaned & wheel wells cleaned</li>
+            <li>Tires cleaned & conditioned</li>
+            <li>Trim conditioned & sealed</li>
+            <li>Paint enhancement process to remove light swirls</li>
+            <li>High-gloss finish with 6-month ceramic sealant</li>
+          </ul>
+        </article>
+
+        <!-- CERAMIC COATING LEVELS -->
+        <article class="service-card">
+          <h3>Level 1 Ceramic Coating</h3>
+          <p class="service-price">
+            <strong>$800</strong> • 2-year protection (with maintenance)
+          </p>
+          <ul>
+            <li>Paint decontamination prep, clay bar & iron remover</li>
+            <li>Wheels deep cleaned, trim cleaned & conditioned</li>
+            <li>Paint enhancement polish removes light swirls</li>
+            <li>2-year ceramic coating applied</li>
+          </ul>
+        </article>
+
+        <article class="service-card">
+          <h3>Level 2 Ceramic Coating</h3>
+          <p class="service-price">
+            <strong>$1200</strong> • 3–5 year protection (with maintenance)
+          </p>
+          <ul>
+            <li>Same prep as Level 1</li>
+            <li>2-step paint polish removes up to ~80% of scratching</li>
+            <li>3–5 year ceramic coating applied</li>
+          </ul>
+        </article>
+
+        <article class="service-card">
+          <h3>Level 3 Ceramic Coating</h3>
+          <p class="service-price">
+            <strong>$1500</strong> • 5 year protection (with maintenance)
+          </p>
+          <ul>
+            <li>Full paint decontamination, clay & iron remover</li>
+            <li>3-step paint correction removes up to ~95% of defects</li>
+            <li>5-year ceramic coating applied</li>
+          </ul>
+        </article>
+
+        <!-- ADD-ONS -->
+        <article class="service-card service-card--addons">
+          <h3>Add-On Services</h3>
+          <ul class="two-column">
+            <li>Headlight restoration – <strong>$60</strong></li>
+            <li>Exterior trim restoration – <strong>$25</strong></li>
+            <li>Engine bay detail – <strong>$60</strong></li>
+            <li>Pet hair removal – <strong>$30+</strong></li>
+            <li>Full interior steam clean – <strong>$50</strong></li>
+            <li>Seat / carpet shampoo – <strong>$60+</strong></li>
+            <li>Leather seats clean &amp; condition – <strong>$40</strong></li>
+            <li>Interior UV protectant – <strong>$30</strong></li>
+          </ul>
         </article>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- 3 STEP PROCESS -->
-    <section id="steps" class="section section-alt">
-      <h2 class="section-title">Simple 3-Step Mobile Detailing</h2>
-      <p class="section-subtitle">
-        Booking with Tiny Detailz is easy. We handle the hard work – you enjoy the fresh, clean ride.
-      </p>
+  <!-- HOW IT WORKS -->
+  <section class="section section-alt" id="how-it-works">
+    <div class="container">
+      <header class="section-header">
+        <h2>How it works</h2>
+        <p>Simple booking, pro-level results.</p>
+      </header>
 
       <div class="steps-grid">
         <article class="step-card">
-          <div class="step-media image-placeholder" style="background-image: url('assets/step-1.jpg');"></div>
-          <h3>1. Book Your Detail</h3>
-          <p>Call, text, or message us with your vehicle info and location. We confirm the best package and time.</p>
+          <div class="step-image" style="background-image: url('IMG_20260116_105656.jpg');"></div>
+          <h3>1. Book your appointment</h3>
+          <p>
+            Call or message Tiny Detailz with your vehicle type and the package
+            you’d like. We’ll confirm the time, location, and final pricing.
+          </p>
         </article>
 
         <article class="step-card">
-          <div class="step-media image-placeholder" style="background-image: url('assets/step-2.jpg');"></div>
-          <h3>2. We Come To You</h3>
-          <p>We arrive on time with professional tools, products, and everything needed to detail your vehicle.</p>
+          <div class="step-image" style="background-image: url('IMG_20260116_110427.jpg');"></div>
+          <h3>2. We come to you</h3>
+          <p>
+            Tiny Detailz arrives at your home or workplace with everything
+            needed—water, power, and premium detailing products.
+          </p>
         </article>
 
         <article class="step-card">
-          <div class="step-media image-placeholder" style="background-image: url('assets/step-3.jpg');"></div>
-          <h3>3. Enjoy The Results</h3>
-          <p>Walk around the vehicle with us, approve the work, and enjoy that fresh, like-new feeling again.</p>
+          <div class="step-image" style="background-image: url('IMG_20260116_110502.jpg');"></div>
+          <h3>3. Enjoy your like-new ride</h3>
+          <p>
+            Walk around your freshly detailed vehicle, check the tiny details,
+            and drive away with a car that feels brand new again.
+          </p>
         </article>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- PACKAGES -->
-    <section id="packages" class="section">
-      <h2 class="section-title">Detailing Packages</h2>
-      <p class="section-subtitle">
-        Choose the level of clean that fits your vehicle. All services are performed with professional-grade products.
-      </p>
-
-      <div class="card-grid">
-        <!-- Basic Wash -->
-        <article class="card">
-          <h3>Basic Wash</h3>
-          <p class="card-price">
-            Cars: <strong>$80</strong><br />
-            Midsize / Small SUV: <strong>$95</strong><br />
-            Large SUV / Trucks: <strong>$150</strong>
-          </p>
-          <ul class="card-list">
-            <li>Full hand wash</li>
-            <li>Bug &amp; residue removal</li>
-            <li>Gas cap area thoroughly cleaned</li>
-            <li>3-month ceramic sealant for enhanced shine &amp; protection</li>
-            <li>Deep wheel cleaning &amp; tire shine</li>
-            <li>Hand-dried for a spotless result</li>
-            <li>Full interior vacuum (trunk if empty)</li>
-            <li>Door jambs cleaned &amp; full interior wipe-down</li>
-            <li>Vents, gauges &amp; cup holders cleaned</li>
-            <li>Interior glass left crystal-clear</li>
-          </ul>
-          <a href="#contact" class="btn card-btn">Book Basic Wash</a>
-        </article>
-
-        <!-- Full Detail -->
-        <article class="card card-featured">
-          <div class="card-pill">Most Popular</div>
-          <h3>Full Detail</h3>
-          <p class="card-price">
-            Cars: <strong>$200</strong><br />
-            Small SUVs / Small Trucks: <strong>$240</strong><br />
-            Large SUVs / Large Trucks / 3rd Row: <strong>$280</strong>
-          </p>
-          <ul class="card-list">
-            <li>Foam wash / hand wash (pre-treat if needed)</li>
-            <li>2 bucket wash method</li>
-            <li>Deep wheel &amp; tire cleaning + non-sling tire gloss</li>
-            <li>Ceramic detail spray</li>
-            <li>Deep vacuum &amp; full interior blow out</li>
-            <li>Interior scrub of plastics, rubber &amp; leather</li>
-            <li>Interior steam cleaning (plastics, vinyls, vents, cup holders)</li>
-            <li>Seat &amp; carpet shampoo + extraction</li>
-            <li>Interior UV protectant (prevents cracking &amp; fading)</li>
-            <li>Leather conditioner (if applicable)</li>
-            <li>Air freshener &amp; odor removal</li>
-            <li>Streak-free glass &amp; door / trunk jams cleaned</li>
-          </ul>
-          <a href="#contact" class="btn card-btn">Book Full Detail</a>
-        </article>
-
-        <!-- Clay & Seal -->
-        <article class="card">
-          <h3>Clay &amp; Seal</h3>
-          <p class="card-price">
-            Cars: <strong>$150</strong><br />
-            Small SUVs / Small Trucks: <strong>$200</strong><br />
-            Large SUVs / Large Trucks: <strong>$240</strong>
-          </p>
-          <ul class="card-list">
-            <li>Foam wash / hand wash (pre-treat if needed)</li>
-            <li>2 bucket wash method</li>
-            <li>Iron removal treatment</li>
-            <li>Clay bar treatment</li>
-            <li>6 month ceramic sealant</li>
-            <li>Deep wheel &amp; tire cleaning + wheel wells cleaned</li>
-            <li>Non-sling tire gloss</li>
-            <li>Deep vacuum &amp; interior blow out</li>
-            <li>Interior wipe down &amp; streak-free glass</li>
-            <li>Door / trunk jams cleaned</li>
-          </ul>
-          <a href="#contact" class="btn card-btn">Book Clay &amp; Seal</a>
-        </article>
-
-        <!-- Paint Enhancement -->
-        <article class="card">
-          <h3>Paint Enhancement &amp; Protection</h3>
-          <p class="card-price">
-            Starting at <strong>$350</strong>
-          </p>
-          <ul class="card-list">
-            <li>Paint decontamination wash + clay bar</li>
-            <li>Wheels deep cleaned &amp; wheel wells cleaned</li>
-            <li>Tires cleaned &amp; conditioned</li>
-            <li>Trim conditioned &amp; sealed</li>
-            <li>Paint enhancement removes light swirls &amp; boosts gloss</li>
-            <li>6 month ceramic sealant</li>
-          </ul>
-          <a href="#contact" class="btn card-btn">Book Paint Enhancement</a>
-        </article>
-      </div>
-    </section>
-
-    <!-- CERAMIC COATING -->
-    <section id="ceramic" class="section section-alt">
-      <h2 class="section-title">Ceramic Coating Packages</h2>
-      <p class="section-subtitle">
-        Long-term protection and insane gloss. Perfect for enthusiasts who want their vehicle to stay looking freshly detailed.
-      </p>
-
-      <div class="card-grid card-grid-3">
-        <!-- Level 1 -->
-        <article class="card">
-          <h3>Level 1 Ceramic Coating</h3>
-          <p class="card-price">Starting at <strong>$800</strong></p>
-          <ul class="card-list">
-            <li>Paint decontamination prep</li>
-            <li>Clay bar treatment &amp; iron removal</li>
-            <li>Wheels deep cleaned &amp; trim cleaned / conditioned</li>
-            <li>Paint enhancement polish removes light swirls</li>
-            <li>2-year ceramic coating (with maintenance)</li>
-          </ul>
-        </article>
-
-        <!-- Level 2 -->
-        <article class="card card-featured">
-          <div class="card-pill">Best Value</div>
-          <h3>Level 2 Ceramic Coating</h3>
-          <p class="card-price">Starting at <strong>$1,200</strong></p>
-          <ul class="card-list">
-            <li>Paint decontamination prep</li>
-            <li>Clay bar treatment &amp; iron removal</li>
-            <li>Wheels deep cleaned &amp; trim conditioned</li>
-            <li>2-step paint polish removes up to ~80% of scratching</li>
-            <li>3–5 year ceramic coating (with maintenance)</li>
-          </ul>
-        </article>
-
-        <!-- Level 3 -->
-        <article class="card">
-          <h3>Level 3 Ceramic Coating</h3>
-          <p class="card-price">Starting at <strong>$1,500</strong></p>
-          <ul class="card-list">
-            <li>Paint decontamination prep</li>
-            <li>Clay bar treatment &amp; iron removal</li>
-            <li>Wheels deep cleaned &amp; trim conditioned</li>
-            <li>Full 3-step paint correction (up to ~95% defect removal)</li>
-            <li>5-year ceramic coating (with maintenance)</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <!-- ADD-ONS -->
-    <section id="addons" class="section">
-      <h2 class="section-title">Add-On Services</h2>
-      <p class="section-subtitle">
-        Customize any package with these extra services for deeper cleaning and added protection.
-      </p>
-
-      <div class="addons-grid">
-        <ul class="addons-list">
-          <li><span>Headlight restoration</span><span>$60</span></li>
-          <li><span>Exterior trim restoration</span><span>$25</span></li>
-          <li><span>Engine bay detail</span><span>$60</span></li>
-          <li><span>Pet hair removal</span><span>$30+</span></li>
-          <li><span>Full interior steam clean</span><span>$50</span></li>
-          <li><span>Seat / carpet shampoo</span><span>$60+</span></li>
-          <li><span>Leather seats clean &amp; conditioned</span><span>$40</span></li>
-          <li><span>Interior UV protectant</span><span>$30</span></li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- GALLERY PLACEHOLDER -->
-    <section id="gallery" class="section section-alt">
-      <h2 class="section-title">Detail Gallery</h2>
-      <p class="section-subtitle">
-        Before &amp; afters, interior rescues, and glossy paint finishes.
-        Replace these placeholders with your own work to show off your results.
-      </p>
+  <!-- GALLERY -->
+  <section class="section" id="gallery">
+    <div class="container">
+      <header class="section-header">
+        <h2>Recent work</h2>
+        <p>Real results from Tiny Detailz customers.</p>
+      </header>
 
       <div class="gallery-grid">
-        <!--
-          Replace each src="assets/gallery-x.jpg" with real image files you upload
-          (for example /assets/tesla-interior-before-after.jpg etc)
-        -->
         <figure class="gallery-item">
-          <img src="assets/gallery-1.jpg" alt="Detail example 1" />
+          <img src="assets-hero-car.jpg" alt="Detailed white car" />
         </figure>
         <figure class="gallery-item">
-          <img src="assets/gallery-2.jpg" alt="Detail example 2" />
+          <img src="IMG_20260116_105656.jpg" alt="Detail in progress" />
         </figure>
         <figure class="gallery-item">
-          <img src="assets/gallery-3.jpg" alt="Detail example 3" />
+          <img src="IMG_20260116_110427.jpg" alt="Finished exterior detail" />
         </figure>
         <figure class="gallery-item">
-          <img src="assets/gallery-4.jpg" alt="Detail example 4" />
-        </figure>
-        <figure class="gallery-item">
-          <img src="assets/gallery-5.jpg" alt="Detail example 5" />
-        </figure>
-        <figure class="gallery-item">
-          <img src="assets/gallery-6.jpg" alt="Detail example 6" />
+          <img src="IMG_20260116_110502.jpg" alt="Shiny paint after detail" />
         </figure>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- VIDEO SECTION -->
-    <section class="section video-section">
-      <h2 class="section-title">Video Showcase</h2>
-      <p class="section-subtitle">
-        Add a short video of you detailing, a 50/50 transformation, or a full walkaround.
-      </p>
+  <!-- CONTACT -->
+  <section class="section section-alt" id="contact">
+    <div class="container contact-grid">
+      <div>
+        <header class="section-header left">
+          <h2>Book your detail</h2>
+          <p>Reach out with your vehicle type and preferred package.</p>
+        </header>
 
-      <div class="video-wrapper">
-        <!--
-          OPTION 1 – YouTube embed:
-          Replace VIDEO_ID_HERE with your YouTube video id:
-          https://www.youtube.com/watch?v=VIDEO_ID_HERE
-        -->
-        <!--
-        <iframe
-          src="https://www.youtube.com/embed/VIDEO_ID_HERE"
-          title="Tiny Detailz Detailing Video"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-        -->
-
-        <!-- OPTION 2 – Self-hosted video file (e.g. assets/detail-demo.mp4) -->
-        <video controls poster="assets/video-poster.jpg">
-          <!-- Replace with your own video file path -->
-          <source src="assets/detail-demo.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section section-alt">
-      <h2 class="section-title">Book Your Detail</h2>
-      <p class="section-subtitle">
-        Serving the Inland Empire and surrounding areas. Call or text to schedule
-        your appointment, ask questions, or get a quote.
-      </p>
-
-      <div class="contact-grid">
-        <div class="contact-card">
-          <h3>Call / Text</h3>
-          <p class="contact-phone">
-            <a href="tel:+19515257666">(951) 525-7666</a>
-          </p>
-          <p>Available by appointment only.</p>
+        <div class="contact-info">
+          <p><strong>Phone:</strong> <a href="tel:5551234567">(555) 123-4567</a></p>
+          <p><strong>Email:</strong> <a href="mailto:tinydetailz@example.com">tinydetailz@example.com</a></p>
+          <p><strong>Hours:</strong> By appointment</p>
         </div>
 
-        <div class="contact-card">
-          <h3>Fast Quote Form</h3>
-          <!-- This is a simple static form; if you later connect it to a service (Formspree, etc.), it can send email -->
-          <form class="contact-form">
-            <label>
-              Name
-              <input type="text" name="name" placeholder="Your name" />
-            </label>
-            <label>
-              Phone
-              <input type="tel" name="phone" placeholder="Best number to reach you" />
-            </label>
-            <label>
-              Vehicle (Year / Make / Model)
-              <input type="text" name="vehicle" placeholder="e.g. 2022 BMW 3 Series" />
-            </label>
-            <label>
-              Package / Services Interested In
-              <textarea name="message" rows="3" placeholder="Basic Wash, Full Detail, Ceramic, etc."></textarea>
-            </label>
-            <p class="form-note">
-              This form is just a placeholder. For now, tap the button below to call or text –
-              or connect this form to an email service later.
-            </p>
-            <a href="tel:+19515257666" class="btn primary">Call / Text To Submit</a>
-          </form>
-        </div>
+        <p class="contact-note">
+          Text a few photos of your vehicle for the most accurate quote.
+        </p>
       </div>
-    </section>
-  </main>
 
-  <footer class="footer">
-    <p>© <span id="year"></span> Tiny Detailz. All rights reserved.</p>
-    <a href="#top" class="back-to-top">Back to top ↑</a>
+      <form class="contact-form">
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" type="text" placeholder="Your name" />
+        </div>
+        <div class="field">
+          <label for="phone">Phone</label>
+          <input id="phone" type="tel" placeholder="Best number to reach you" />
+        </div>
+        <div class="field">
+          <label for="vehicle">Vehicle</label>
+          <input id="vehicle" type="text" placeholder="Year, make, and model" />
+        </div>
+        <div class="field">
+          <label for="service">Service interested in</label>
+          <select id="service">
+            <option>Basic Wash</option>
+            <option>Full Detail</option>
+            <option>Clay &amp; Seal</option>
+            <option>Paint Enhancement &amp; Protection</option>
+            <option>Level 1 Ceramic</option>
+            <option>Level 2 Ceramic</option>
+            <option>Level 3 Ceramic</option>
+            <option>Add-ons / Other</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" rows="4" placeholder="Preferred dates, special requests, etc."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">
+          Send Request (demo only)
+        </button>
+        <p class="form-note">
+          This form is a visual demo only. Use the phone or email above for booking.
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Tiny Detailz. All rights reserved.</p>
+      <p class="footer-credit">Mobile auto detailing • Tiny details, big difference.</p>
+    </div>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
