@@ -5,37 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tiny Detailz • Mobile Auto Detailing</title>
   <link rel="stylesheet" href="styles.css" />
+  <meta
+    name="description"
+    content="Tiny Detailz offers mobile auto detailing, ceramic coatings, and paint protection in Southern California."
+  />
 </head>
 <body>
-  <!-- Top bar / navigation -->
+  <!-- HEADER / NAV -->
   <header class="site-header">
-    <div class="site-brand">
-      <div class="site-logo-dot">Z</div>
-      <div class="site-title-block">
-        <span class="site-name">Tiny Detailz</span>
-        <span class="site-tagline">Mobile Auto Detailing</span>
+    <div class="container nav">
+      <div class="brand">
+        <div class="brand-mark">Z</div>
+        <div class="brand-text">
+          <span class="brand-name">Tiny Detailz</span>
+          <span class="brand-tagline">Mobile Auto Detailing</span>
+        </div>
       </div>
+      <nav class="main-nav">
+        <a href="#package">Services</a>
+        <a href="#why">Why Tiny Detailz</a>
+        <a href="#work">Recent work</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#contact" class="nav-cta">Book now</a>
+      </nav>
     </div>
-
-    <nav class="site-nav">
-      <a href="#package">Services</a>
-      <a href="#why">Why Tiny Detailz?</a>
-      <a href="#recent-work">Recent work</a>
-      <a href="#how-it-works">How it works</a>
-      <a href="#contact" class="nav-cta">Book now</a>
-    </nav>
   </header>
 
   <main>
     <!-- HERO -->
     <section class="hero">
-      <div class="hero-inner">
-        <div class="hero-content">
-          <p class="eyebrow">MOBILE AUTO DETAILING • SOUTHERN CALIFORNIA</p>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Mobile auto detailing • Southern California</p>
           <h1>Show-room shine,<br />right in your driveway.</h1>
-          <p class="hero-copy">
-            Tiny Detailz brings professional-grade detailing to you. From quick maintenance washes
-            to full interior restorations and long-term ceramic coatings, we treat every ride like it’s our own.
+          <p class="hero-sub">
+            Tiny Detailz brings professional-grade detailing to you. From quick
+            maintenance washes to full interior restorations and long-term
+            ceramic coatings, we treat every ride like it’s our own.
           </p>
 
           <div class="hero-actions">
@@ -43,412 +49,387 @@
             <a href="#package" class="btn ghost">View packages</a>
           </div>
 
-          <p class="hero-trust">
-            ✔ Mobile service &nbsp; ✔ Premium products only &nbsp; ✔ Licensed & insured
+          <p class="hero-checks">
+            ✔ Mobile service &nbsp; ✔ Premium products only &nbsp; ✔ Licensed &
+            insured
           </p>
         </div>
 
         <div class="hero-media">
-          <!-- Want a video later? Replace this whole block with a <video> tag. -->
-          <div
-            class="hero-image"
-            style="background-image: url('IMG_20260117_082321.jpg');"
-            aria-label="Blue Camaro after exterior detail"
-          ></div>
+          <!-- Hero image – you can swap this src for any other uploaded image -->
+          <figure class="hero-image-frame">
+            <img
+              src="IMG_20260117_082321.jpg"
+              alt="Blue Camaro freshly detailed on the street"
+            />
+          </figure>
         </div>
+      </div>
+    </section>
+
+    <!-- SERVICES & PRICING -->
+    <section id="package" class="section">
+      <div class="container">
+        <p class="eyebrow center">Services &amp; Pricing</p>
+        <h2 class="section-title center">Packages built for every vehicle.</h2>
+        <p class="section-sub center">
+          Transparent pricing, no surprises. Pick the level of clean your ride
+          needs.
+        </p>
+
+        <div class="card-grid two-column">
+          <!-- BASIC WASH -->
+          <article class="card">
+            <h3>Basic wash</h3>
+            <p class="card-tag">Entry-level maintenance clean</p>
+            <ul class="price-list">
+              <li><strong>Cars:</strong> $80</li>
+              <li><strong>Midsize / Small SUV:</strong> $95</li>
+              <li><strong>Large SUV / Trucks:</strong> $150</li>
+            </ul>
+            <ul class="card-list">
+              <li>Full hand wash</li>
+              <li>Bug and residue removal</li>
+              <li>Gas cap area thoroughly cleaned</li>
+              <li>3-month ceramic sealant for shine &amp; protection</li>
+              <li>Deep wheel cleaning &amp; tire shine</li>
+              <li>Hand-dried for a spotless result</li>
+              <li>Full interior vacuum (trunk if empty)</li>
+              <li>Door jambs cleaned</li>
+              <li>Interior wipe-down, vents &amp; gauges brushed</li>
+              <li>Cup holders cleaned</li>
+              <li>Interior windows crystal clear</li>
+            </ul>
+          </article>
+
+          <!-- FULL DETAIL -->
+          <article class="card highlight">
+            <p class="card-pill">Most popular</p>
+            <h3>Full detail</h3>
+            <p class="card-tag">Deep interior &amp; exterior reset</p>
+            <ul class="price-list">
+              <li><strong>Cars:</strong> $200</li>
+              <li><strong>Small SUVs / Small Trucks:</strong> $240</li>
+              <li>
+                <strong>Large SUVs / Large Trucks / 3rd Row:</strong> $280
+              </li>
+            </ul>
+            <ul class="card-list">
+              <li>Foam wash / hand wash (pre-treat if needed)</li>
+              <li>2-bucket wash method</li>
+              <li>Deep wheel &amp; tire cleaning + non-sling tire gloss</li>
+              <li>Ceramic detail spray</li>
+              <li>Deep vacuum &amp; full interior blow-out</li>
+              <li>Scrub down of all plastics, rubber &amp; leather</li>
+              <li>
+                Steam clean plastics, vinyls, vents &amp; cup holders (sanitizes
+                &amp; kills bacteria)
+              </li>
+              <li>
+                Seat &amp; carpet shampoo and extraction (stain &amp; odor
+                removal)
+              </li>
+              <li>Interior UV protectant</li>
+              <li>Leather conditioner (if applicable)</li>
+              <li>Air freshener &amp; odor removal</li>
+              <li>Streak-free glass</li>
+              <li>Door / trunk jambs cleaned</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="card-grid three-column">
+          <!-- CLAY & SEAL -->
+          <article class="card">
+            <h3>Clay &amp; seal</h3>
+            <p class="card-tag">Smooth paint + 6-month protection</p>
+            <ul class="price-list">
+              <li><strong>Cars:</strong> $150</li>
+              <li><strong>Small SUVs / Small Trucks:</strong> $200</li>
+              <li><strong>Large SUVs / Large Trucks:</strong> $240</li>
+            </ul>
+            <ul class="card-list">
+              <li>Foam wash / hand wash (pre-treat if needed)</li>
+              <li>2-bucket wash method</li>
+              <li>Iron removal &amp; clay bar treatment</li>
+              <li>Ceramic sealant (6 months)</li>
+              <li>Deep wheel &amp; tire cleaning</li>
+              <li>Wheel wells cleaned &amp; conditioned</li>
+              <li>Tire gloss (non-sling)</li>
+              <li>Deep vacuum &amp; interior blow-out</li>
+              <li>Interior wipe-down</li>
+              <li>Air freshener &amp; streak-free glass</li>
+              <li>Door / trunk jambs cleaned</li>
+            </ul>
+            <a href="#contact" class="card-cta">Book clay &amp; seal</a>
+          </article>
+
+          <!-- PAINT ENHANCEMENT -->
+          <article class="card">
+            <h3>Paint enhancement &amp; protection</h3>
+            <p class="card-tag">Boost gloss. Remove light swirls.</p>
+            <p class="price-inline"><strong>Starting at:</strong> $350</p>
+            <ul class="card-list">
+              <li>Paint decontamination wash + clay bar</li>
+              <li>Wheels deep cleaned &amp; wheel wells cleaned</li>
+              <li>Tires cleaned &amp; conditioned</li>
+              <li>Trim conditioned &amp; sealed</li>
+              <li>Paint enhancement process for high gloss</li>
+              <li>6-month ceramic sealant</li>
+            </ul>
+          </article>
+
+          <!-- LEVEL 1 CERAMIC -->
+          <article class="card">
+            <h3>Level 1 ceramic coating</h3>
+            <p class="card-tag">Daily drivers &amp; new cars</p>
+            <p class="price-inline"><strong>Starting at:</strong> $800</p>
+            <ul class="card-list">
+              <li>Paint decontamination prep</li>
+              <li>Clay bar &amp; iron removal treatment</li>
+              <li>Wheels deep cleaned</li>
+              <li>Trim cleaned &amp; conditioned</li>
+              <li>
+                Paint enhancement polish (removes light swirls &amp; creates high
+                gloss)
+              </li>
+              <li>2-year ceramic coating (with maintenance)</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="card-grid two-column">
+          <!-- LEVEL 2 CERAMIC -->
+          <article class="card">
+            <h3>Level 2 ceramic coating</h3>
+            <p class="card-tag">Serious protection &amp; correction</p>
+            <p class="price-inline"><strong>Starting at:</strong> $1200</p>
+            <ul class="card-list">
+              <li>Paint decontamination prep</li>
+              <li>Clay bar &amp; iron removal treatment</li>
+              <li>Wheels deep cleaned</li>
+              <li>Trim cleaned &amp; conditioned</li>
+              <li>2-step paint polish (removes up to ~80% of scratching)</li>
+              <li>3-5 year ceramic coating (with maintenance)</li>
+            </ul>
+          </article>
+
+          <!-- LEVEL 3 CERAMIC -->
+          <article class="card">
+            <h3>Level 3 ceramic coating</h3>
+            <p class="card-tag">Maximum correction &amp; longevity</p>
+            <p class="price-inline"><strong>Starting at:</strong> $1500</p>
+            <ul class="card-list">
+              <li>Paint decontamination prep</li>
+              <li>Clay bar &amp; iron removal treatment</li>
+              <li>Wheels deep cleaned</li>
+              <li>Trim cleaned &amp; conditioned</li>
+              <li>Full 3-step paint correction (up to ~95% of defects)</li>
+              <li>5-year ceramic coating (with maintenance)</li>
+            </ul>
+          </article>
+        </div>
+
+        <!-- ADD-ONS -->
+        <section class="subsection">
+          <h3>Add-On Services</h3>
+          <p>Add these to any detail for extra restoration.</p>
+          <ul class="card-list two-column-list">
+            <li>Headlight restoration – $60</li>
+            <li>Exterior trim restoration – $25</li>
+            <li>Engine bay detail – $60</li>
+            <li>Pet hair removal – $30+</li>
+            <li>Full interior steam clean – $50</li>
+            <li>Seat / carpet shampoo – $60+</li>
+            <li>Leather seats cleaned &amp; conditioned – $40</li>
+            <li>Interior UV protectant – $30</li>
+          </ul>
+        </section>
       </div>
     </section>
 
     <!-- WHY TINY DETAILZ -->
-    <section id="why" class="section narrow">
-      <header class="section-header">
-        <p class="eyebrow">WHY TINY DETAILZ</p>
-        <h2>Obsessed with the little things.</h2>
-        <p>
-          Anyone can wash a car. Tiny Detailz focuses on the things most people miss—
-          vents, buttons, seams, badges, and the tricky spots that make a car feel truly clean.
-        </p>
-      </header>
+    <section id="why" class="section muted">
+      <div class="container">
+        <p class="eyebrow center">Why Tiny Detailz</p>
+        <h2 class="section-title center">Every detail matters.</h2>
 
-      <div class="three-column">
-        <article class="info-card">
-          <h3>Mobile & convenient</h3>
-          <p>
-            We come to you. Home, office, or your client’s driveway—our setup is fully mobile
-            so you don’t lose time sitting in a waiting room.
-          </p>
-        </article>
-        <article class="info-card">
-          <h3>Premium products only</h3>
-          <p>
-            pH-balanced soaps, high-quality microfibers, and ceramic-grade protection chosen to be
-            safe on modern finishes, PPF, wraps, and delicate interiors.
-          </p>
-        </article>
-        <article class="info-card">
-          <h3>Licensed & insured</h3>
-          <p>
-            Your vehicle is a serious investment. We treat it like one, with professional
-            standards and protection.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <!-- SERVICES / PACKAGES -->
-    <section id="package" class="section">
-      <header class="section-header">
-        <p class="eyebrow">SERVICES & PRICING</p>
-        <h2>Packages built for every vehicle.</h2>
-        <p>
-          Transparent pricing, no surprises. Pick the level of clean your ride needs.
-        </p>
-      </header>
-
-      <div class="grid-2">
-        <!-- BASIC WASH -->
-        <article class="package-card">
-          <p class="pill">Entry-level maintenance clean</p>
-          <h3>BASIC WASH</h3>
-
-          <ul class="price-list">
-            <li><strong>Cars:</strong> $80</li>
-            <li><strong>Midsize / Small SUV:</strong> $95</li>
-            <li><strong>Large SUV / Trucks:</strong> $150</li>
-          </ul>
-
-          <ul class="bullet-list">
-            <li>Full hand wash</li>
-            <li>Bug and residue removal</li>
-            <li>Gas cap area thoroughly cleaned</li>
-            <li>3-month ceramic sealant for shine & protection</li>
-            <li>Deep wheel cleaning</li>
-            <li>Tire shine for a clean, glossy finish</li>
-            <li>Hand-dried for a spotless result</li>
-            <li>Full vacuum of all areas (trunk if empty)</li>
-            <li>Door jambs cleaned</li>
-            <li>Complete interior wipe-down</li>
-            <li>Vents and gauges brushed for precision</li>
-            <li>Cup holders cleaned</li>
-            <li>Interior windows left crystal-clear</li>
-          </ul>
-
-          <a href="#contact" class="btn pill-button">Book basic wash</a>
-        </article>
-
-        <!-- FULL DETAIL -->
-        <article class="package-card">
-          <p class="pill accent">Most popular</p>
-          <h3>FULL DETAIL</h3>
-          <p class="subtitle">Deep interior & exterior reset</p>
-
-          <ul class="price-list">
-            <li><strong>Cars:</strong> $200</li>
-            <li><strong>Small SUVs / Small Trucks:</strong> $240</li>
-            <li><strong>Large SUVs / Large Trucks / 3rd Row:</strong> $280</li>
-          </ul>
-
-          <ul class="bullet-list">
-            <li>Foam wash / hand wash (pre-treat if needed)</li>
-            <li>2-bucket wash method</li>
-            <li>Deep wheel & tire cleaning</li>
-            <li>Tire gloss (non-sling)</li>
-            <li>Ceramic detail spray</li>
-            <li>Deep vacuum</li>
-            <li>Full interior blow-out of all cracks & crevices</li>
-            <li>Full interior scrub-down of plastics, rubber & leather</li>
-            <li>
-              Full interior steam cleaning of plastics, vinyls, air vents & cup holders
-              (sanitizes & kills bacteria)
-            </li>
-            <li>Full seat & carpet shampoo (removes stains & odors)</li>
-            <li>Seat & carpet extraction</li>
-            <li>Interior UV protectant (prevents cracking & fading)</li>
-            <li>Leather conditioner (if applicable)</li>
-            <li>Air freshener & odor removal</li>
-            <li>Streak-free glass</li>
-            <li>Door / trunk jambs cleaned</li>
-          </ul>
-
-          <a href="#contact" class="btn pill-button">Book full detail</a>
-        </article>
-      </div>
-
-      <div class="grid-2">
-        <!-- CLAY & SEAL -->
-        <article class="package-card">
-          <p class="pill">Smooth paint + 6-month protection</p>
-          <h3>CLAY & SEAL</h3>
-
-          <ul class="price-list">
-            <li><strong>Cars:</strong> $150</li>
-            <li><strong>Small SUVs / Small Trucks:</strong> $200</li>
-            <li><strong>Large SUVs / Large Trucks:</strong> $240</li>
-          </ul>
-
-          <ul class="bullet-list">
-            <li>Foam wash / hand wash (pre-treat if needed)</li>
-            <li>2-bucket wash method</li>
-            <li>Iron removal treatment</li>
-            <li>Clay bar treatment</li>
-            <li>Ceramic sealant (6 months)</li>
-            <li>Deep wheel & tire cleaning</li>
-            <li>Wheel wells cleaned & conditioned</li>
-            <li>Tire gloss (non-sling)</li>
-            <li>Deep vacuum & full interior blow-out</li>
-            <li>Interior wipe-down</li>
-            <li>Air freshener</li>
-            <li>Streak-free glass</li>
-            <li>Door / trunk jambs cleaned</li>
-          </ul>
-
-          <a href="#contact" class="btn pill-button">Book clay & seal</a>
-        </article>
-
-        <!-- PAINT ENHANCEMENT & PROTECTION -->
-        <article class="package-card">
-          <p class="pill">Boost gloss. Remove light swirls.</p>
-          <h3>PAINT ENHANCEMENT & PROTECTION</h3>
-
-          <ul class="price-list">
-            <li><strong>Starting at:</strong> $350</li>
-          </ul>
-
-          <ul class="bullet-list">
-            <li>Paint decontamination wash + clay bar</li>
-            <li>Wheels deep cleaned</li>
-            <li>All wheel wells cleaned</li>
-            <li>Tires cleaned & conditioned</li>
-            <li>Trim conditioned & sealed</li>
-            <li>Paint enhancement process to remove light swirls & increase gloss</li>
-            <li>6-month ceramic sealant</li>
-          </ul>
-
-          <a href="#contact" class="btn pill-button">Book paint enhancement</a>
-        </article>
-      </div>
-
-      <!-- CERAMIC COATING LEVELS -->
-      <div class="grid-2">
-        <!-- LEVEL 1 -->
-        <article class="package-card">
-          <p class="pill">Daily drivers & new cars</p>
-          <h3>LEVEL 1 CERAMIC COATING</h3>
-
-          <ul class="price-list">
-            <li><strong>Starting at:</strong> $800</li>
-          </ul>
-
-          <ul class="bullet-list">
-            <li>Paint decontamination prep</li>
-            <li>Clay bar treatment</li>
-            <li>Iron removal treatment</li>
-            <li>Wheels deep cleaned</li>
-            <li>Trim cleaned & conditioned</li>
-            <li>
-              Paint enhancement polish which removes light swirls & creates a high gloss
-            </li>
-            <li>2-year ceramic coating (with maintenance)</li>
-          </ul>
-        </article>
-
-        <!-- LEVEL 2 -->
-        <article class="package-card">
-          <p class="pill">Serious protection & correction</p>
-          <h3>LEVEL 2 CERAMIC COATING</h3>
-
-          <ul class="price-list">
-            <li><strong>Starting at:</strong> $1200</li>
-          </ul>
-
-          <ul class="bullet-list">
-            <li>Paint decontamination prep</li>
-            <li>Clay bar & iron removal treatment</li>
-            <li>Wheels deep cleaned</li>
-            <li>Trim cleaned & conditioned</li>
-            <li>2-step paint polish (removes up to ~80% of scratching)</li>
-            <li>3-5 year ceramic coating (with maintenance)</li>
-          </ul>
-        </article>
-      </div>
-
-      <div class="grid-2">
-        <!-- LEVEL 3 -->
-        <article class="package-card">
-          <p class="pill">Maximum correction & longevity</p>
-          <h3>LEVEL 3 CERAMIC COATING</h3>
-
-          <ul class="price-list">
-            <li><strong>Starting at:</strong> $1500</li>
-          </ul>
-
-          <ul class="bullet-list">
-            <li>Paint decontamination prep</li>
-            <li>Clay bar & iron removal treatment</li>
-            <li>Wheels deep cleaned</li>
-            <li>Trim cleaned & conditioned</li>
-            <li>Full 3-step paint correction (up to ~95% of paint defects)</li>
-            <li>5-year ceramic coating (with maintenance)</li>
-          </ul>
-        </article>
-
-        <!-- ADD-ONS -->
-        <article class="package-card">
-          <p class="pill accent">Add-On Services</p>
-          <h3>Dial in the tiny details.</h3>
-
-          <ul class="bullet-list">
-            <li>Headlight restoration – <strong>$60</strong></li>
-            <li>Exterior trim restoration – <strong>$25</strong></li>
-            <li>Engine bay detail – <strong>$60</strong></li>
-            <li>Pet hair removal – <strong>$30+</strong></li>
-            <li>Full interior steam clean – <strong>$50</strong></li>
-            <li>Seat / carpet shampoo – <strong>$60+</strong></li>
-            <li>Leather seats cleaned & conditioned – <strong>$40</strong></li>
-            <li>Interior UV protectant – <strong>$30</strong></li>
-          </ul>
-        </article>
+        <div class="card-grid three-column">
+          <article class="card simple">
+            <h3>Mobile &amp; convenient</h3>
+            <p>
+              We come to your home or workplace with everything needed—water,
+              power, and premium products.
+            </p>
+          </article>
+          <article class="card simple">
+            <h3>Premium products only</h3>
+            <p>
+              pH-balanced soaps, quality microfiber, and pro-grade protectants
+              keep your ride looking new.
+            </p>
+          </article>
+          <article class="card simple">
+            <h3>Licensed &amp; insured</h3>
+            <p>
+              Peace of mind while we work on your investment. Professional
+              service from first message to final wipe-down.
+            </p>
+          </article>
+        </div>
       </div>
     </section>
 
     <!-- RECENT WORK -->
-    <section id="recent-work" class="section">
-      <header class="section-header">
-        <p class="eyebrow">RECENT WORK</p>
-        <h2>Real results from Tiny Detailz customers.</h2>
-      </header>
+    <section id="work" class="section">
+      <div class="container">
+        <p class="eyebrow center">Recent work</p>
+        <h2 class="section-title center">
+          Real results from Tiny Detailz customers.
+        </h2>
 
-      <div class="work-grid">
-        <figure class="work-card">
-          <img src="IMG_20260116_105656.jpg" alt="Detail result 1" />
-          <figcaption>Finished exterior detail</figcaption>
-        </figure>
+        <div class="gallery-grid">
+          <figure class="gallery-item">
+            <img
+              src="IMG_20260116_105656.jpg"
+              alt="White truck detailed and parked on the street"
+            />
+            <figcaption>Finished exterior detail</figcaption>
+          </figure>
 
-        <figure class="work-card">
-          <img src="IMG_20260116_110443.jpg" alt="Detail result 2" />
-          <figcaption>Interior & glass clean</figcaption>
-        </figure>
+          <figure class="gallery-item">
+            <img
+              src="IMG_20260117_082323.jpg"
+              alt="Clean interior with panoramic roof"
+            />
+            <figcaption>Interior refresh</figcaption>
+          </figure>
 
-        <figure class="work-card">
-          <img src="IMG_20260116_110502.jpg" alt="Detail result 3" />
-          <figcaption>Full exterior & wheels</figcaption>
-        </figure>
+          <figure class="gallery-item">
+            <img
+              src="IMG_20260117_082330.jpg"
+              alt="Classic car with deep gloss after detail"
+            />
+            <figcaption>Gloss restoration</figcaption>
+          </figure>
 
-        <figure class="work-card">
-          <img src="IMG_20260116_110507.jpg" alt="Detail result 4" />
-          <figcaption>Daily driver refresh</figcaption>
-        </figure>
-
-        <figure class="work-card">
-          <img src="IMG_20260117_082317.jpg" alt="Detail result 5" />
-          <figcaption>Ceramic protection</figcaption>
-        </figure>
-
-        <figure class="work-card">
-          <img src="IMG_20260117_082321.jpg" alt="Detail result 6" />
-          <figcaption>Blue Camaro full detail</figcaption>
-        </figure>
-
-        <figure class="work-card">
-          <img src="IMG_20260117_082323.jpg" alt="Detail result 7" />
-          <figcaption>Interior deep clean</figcaption>
-        </figure>
-
-        <figure class="work-card">
-          <img src="IMG_20260117_082325.jpg" alt="Detail result 8" />
-          <figcaption>Premium wash & seal</figcaption>
-        </figure>
-
-        <figure class="work-card">
-          <img src="IMG_20260117_082330.jpg" alt="Detail result 9" />
-          <figcaption>Glossy paint finish</figcaption>
-        </figure>
-
-        <figure class="work-card">
-          <img src="IMG_20260117_082334.jpg" alt="Detail result 10" />
-          <figcaption>Showroom-level shine</figcaption>
-        </figure>
+          <figure class="gallery-item">
+            <img
+              src="IMG_20260117_082334.jpg"
+              alt="White Tesla parked curbside after detail"
+            />
+            <figcaption>Maintenance detail</figcaption>
+          </figure>
+        </div>
       </div>
     </section>
 
     <!-- HOW IT WORKS -->
-    <section id="how-it-works" class="section narrow">
-      <header class="section-header">
-        <p class="eyebrow">HOW IT WORKS</p>
-        <h2>From request to shine in four simple steps.</h2>
-      </header>
+    <section id="how-it-works" class="section muted">
+      <div class="container">
+        <p class="eyebrow center">How it works</p>
+        <h2 class="section-title center">
+          From request to shine in four simple steps.
+        </h2>
 
-      <ol class="steps">
-        <li>
-          <h3>1. Pick your package</h3>
-          <p>
-            Choose the service level that fits your vehicle: maintenance wash, full detail,
-            paint enhancement, or ceramic coating.
-          </p>
-        </li>
-        <li>
-          <h3>2. Schedule your mobile visit</h3>
-          <p>
-            We’ll confirm your date, time, and location. Driveway, garage, or office-lot—wherever
-            your car lives.
-          </p>
-        </li>
-        <li>
-          <h3>3. We handle the tiny detailz</h3>
-          <p>
-            We arrive on time, walk your vehicle with you, then get to work while you relax
-            or handle your day.
-          </p>
-        </li>
-        <li>
-          <h3>4. Final walk-through</h3>
-          <p>
-            Together we inspect the vehicle, answer questions, and make sure every tiny detail
-            is dialed in before we roll out.
-          </p>
-        </li>
-      </ol>
+        <ol class="steps">
+          <li>
+            <h3>1. Reach out</h3>
+            <p>
+              Call or text with your vehicle type, location, and what you’re
+              looking for. A few photos help dial in the quote.
+            </p>
+          </li>
+          <li>
+            <h3>2. Pick your package</h3>
+            <p>
+              Choose from maintenance washes, full details, or ceramic coatings
+              based on your goals and budget.
+            </p>
+          </li>
+          <li>
+            <h3>3. We come to you</h3>
+            <p>
+              We arrive on time with everything needed and treat your vehicle
+              with care, inside and out.
+            </p>
+          </li>
+          <li>
+            <h3>4. Walk-through &amp; care tips</h3>
+            <p>
+              We review the results with you and share simple tips to keep your
+              vehicle looking freshly detailed.
+            </p>
+          </li>
+        </ol>
+      </div>
     </section>
 
     <!-- CONTACT / BOOKING -->
-    <section id="contact" class="section contact-section">
-      <header class="section-header">
-        <p class="eyebrow">BOOK YOUR DETAIL</p>
-        <h2>Ready to make your car feel new again?</h2>
-        <p>
-          Reach out with your vehicle type and preferred package. We’ll confirm availability
-          and lock in your appointment.
-        </p>
-      </header>
-
-      <div class="contact-grid">
-        <div class="contact-card">
-          <h3>Call / Text</h3>
-          <p class="contact-highlight">(555) 555-5555</p>
-          <p>
-            Fastest way to get on the schedule. Send a few photos of the vehicle for the most
-            accurate quote.
+    <section id="contact" class="section">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow">Book your detail</p>
+          <h2 class="section-title">
+            Ready for that “just detailed” feeling?
+          </h2>
+          <p class="section-sub">
+            Reach out with your vehicle type, location, and preferred package.
+            We’ll confirm pricing and lock in a time.
           </p>
+
+          <div class="contact-card">
+            <h3>Call / Text</h3>
+            <p class="contact-highlight">
+              <a href="tel:19515257666">(951) 525-7666</a>
+            </p>
+            <p>
+              Fastest way to get on the schedule. Send a few photos of the
+              vehicle for the most accurate quote.
+            </p>
+          </div>
+
+          <div class="contact-card">
+            <h3>Email</h3>
+            <p class="contact-highlight">
+              <a href="mailto:tinydetailzdetail@gmail.com"
+                >tinydetailzdetail@gmail.com</a
+              >
+            </p>
+          </div>
         </div>
 
-        <div class="contact-card">
-          <h3>Email</h3>
-          <p class="contact-highlight">tinydetailz@example.com</p>
+        <div class="contact-side">
+          <h3>Service area</h3>
           <p>
-            Prefer email? Send your name, location, vehicle, and the package you’re interested in.
+            Based in Southern California and serving surrounding areas. Text
+            your city &amp; zip and we’ll confirm availability.
+          </p>
+
+          <h3>Best times</h3>
+          <p>
+            Morning appointments are ideal for paint work and ceramic coatings.
+            Limited evening slots for maintenance details.
           </p>
         </div>
       </div>
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer class="site-footer">
-    <p>© <span id="year"></span> Tiny Detailz. All rights reserved.</p>
-  </footer>
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Tiny Detailz. All rights reserved.</p>
+      <p class="footer-sub">
+        Mobile auto detailing • Southern California
+      </p>
+    </div>
 
-  <script>
-    // Simple current-year script for the footer
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+    <script>
+      // Keep footer year up to date automatically
+      document.getElementById("year").textContent =
+        new Date().getFullYear();
+    </script>
+  </footer>
 </body>
 </html>
